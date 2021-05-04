@@ -1,0 +1,14 @@
+img_array = cv2.imread('static/0.jpg', cv2.IMREAD_GRAYSCALE)
+
+new_array = cv2.resize(img_array,(150,150))
+
+X = []
+
+X.append(new_array)
+
+X = np.array(X).reshape(-1,150,150)
+print(X.shape)
+X = X/255.0  
+X = X.reshape(-1,150,150,1)
+
+prediction = model_load.predict(X)

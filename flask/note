@@ -1,0 +1,4 @@
+source .venv/bin/activate
+to run the program : python app.py 
+to quit the server comand + c & ctrl c 
+to exit the env deactivate 
